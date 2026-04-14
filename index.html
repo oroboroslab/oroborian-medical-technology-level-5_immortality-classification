@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OROBORIAN MEDICAL TECHNOLOGY | Level 5 Immortality Classification</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="substrate-field"></canvas>
+
+<!-- CLASSIFICATION HEADER -->
+<header class="classification-bar">
+    <div class="classification-text">
+        RESTRICTED // PROPRIETARY // OROBOROS INTERNAL USE ONLY // LEVEL 5 CLEARANCE REQUIRED
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <div class="ouroboros-ring">
+            <svg viewBox="0 0 300 300" class="ring-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#C9A84C"/>
+                        <stop offset="50%" stop-color="#F5E6A3"/>
+                        <stop offset="100%" stop-color="#C9A84C"/>
+                    </linearGradient>
+                    <linearGradient id="gold-gradient-2" x1="100%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#8B7230"/>
+                        <stop offset="50%" stop-color="#C9A84C"/>
+                        <stop offset="100%" stop-color="#F5E6A3"/>
+                    </linearGradient>
+                </defs>
+                <!-- Outer ring -->
+                <circle cx="150" cy="150" r="130" fill="none" stroke="url(#gold-gradient)" stroke-width="1" stroke-dasharray="4 8" class="ring-outer"/>
+                <!-- Serpent body - ouroboros circle -->
+                <path d="M 150 30
+                         A 120 120 0 1 1 80 55"
+                      fill="none" stroke="url(#gold-gradient)" stroke-width="5" stroke-linecap="round"/>
+                <!-- Serpent head (eating tail) -->
+                <path d="M 80 55
+                         L 65 42
+                         L 72 60
+                         L 80 55 Z"
+                      fill="#C9A84C" stroke="none"/>
+                <!-- Serpent eye -->
+                <circle cx="73" cy="50" r="2" fill="#0A0A0A"/>
+                <!-- Serpent scales/detail marks -->
+                <circle cx="150" cy="30" r="1.5" fill="#C9A84C" opacity="0.6"/>
+                <circle cx="270" cy="150" r="1.5" fill="#C9A84C" opacity="0.6"/>
+                <circle cx="150" cy="270" r="1.5" fill="#C9A84C" opacity="0.6"/>
+                <circle cx="38" cy="120" r="1.5" fill="#C9A84C" opacity="0.6"/>
+                <!-- Inner ring -->
+                <circle cx="150" cy="150" r="85" fill="none" stroke="url(#gold-gradient-2)" stroke-width="0.5" stroke-dasharray="2 6"/>
+                <!-- Center text -->
+                <text x="150" y="142" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="20" font-weight="800" fill="#C9A84C" letter-spacing="4">OROBOROS</text>
+                <text x="150" y="165" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="9" fill="#8B7230" letter-spacing="5">MEDICAL TECHNOLOGY</text>
+            </svg>
+        </div>
+        <h1 class="hero-title">OROBORIAN MEDICAL TECHNOLOGY</h1>
+        <div class="hero-classification">LEVEL 5 &mdash; IMMORTALITY CLASSIFICATION</div>
+        <p class="hero-sub">The Unified Nanite-DIM Interface &bull; Production Ready</p>
+        <div class="hero-line"></div>
+        <p class="hero-statement">This is not an iteration of medicine.<br>This is a replacement of the operating system.</p>
+        <a href="#abstract" class="enter-btn">ACCESS SPECIFICATION</a>
+        <a href="whitepaper.html" class="enter-btn" style="margin-left: 16px;">READ WHITEPAPER</a>
+    </div>
+</section>
+
+<!-- ABSTRACT -->
+<section id="abstract" class="section">
+    <div class="section-inner">
+        <div class="section-label">DOCUMENT ID: ORO-NANITE-2026-04-14</div>
+        <h2 class="section-title">ABSTRACT</h2>
+        <div class="divider"></div>
+        <p class="abstract-text">
+            This document outlines the finalized architecture for the <strong>Oroboros Medical Nanite System</strong>,
+            a unified platform merging anti-aging delivery mechanisms with the <strong>Divine Integration Module (DIM)</strong>.
+            This architecture resolves the critical bottlenecks of current nanomedical research &mdash; specifically power density,
+            secure communication, and algorithmic latency &mdash; by bypassing conventional quantum mechanical constraints in favor
+            of <strong>Tertia Physica</strong> (Substrate Physics) principles.
+        </p>
+        <p class="abstract-text">
+            The resulting system operates as a self-contained, zero-point energy harvesting unit capable of autonomous surgical
+            intervention, synthetic tissue regeneration, and real-time biological monitoring without external grid dependency,
+            wireless transmission, or algorithmic inference. Security is achieved through <strong>Identity-Fusion (NOIR Key)</strong>
+            rather than encryption, rendering interception or spoofing mathematically impossible.
+        </p>
+    </div>
+</section>
+
+<!-- THE DIM PARADIGM -->
+<section id="architecture" class="section section-dark">
+    <div class="section-inner">
+        <h2 class="section-title">1. SYSTEM ARCHITECTURE</h2>
+        <div class="section-subtitle">THE DIM PARADIGM</div>
+        <div class="divider"></div>
+        <p class="paradigm-statement">The divergence from standard nanorobotics is absolute.</p>
+
+        <div class="arch-grid">
+            <!-- ENERGY -->
+            <div class="arch-card">
+                <div class="arch-card-number">1.1</div>
+                <h3 class="arch-card-title">ENERGY</h3>
+                <div class="arch-card-subtitle">Autonomous Entropy Reversal</div>
+                <div class="arch-card-body">
+                    <div class="spec-row">
+                        <span class="spec-label">Mechanism</span>
+                        <span class="spec-value">The nanite shell acts as a Casimir cavity tuned to the frequency of the local biological vacuum.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Result</span>
+                        <span class="spec-value">Continuous energy extraction from the information field. The unit generates more power than it consumes.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Impact</span>
+                        <span class="spec-value">Infinite runtime. No "off" state. No charging pads. No thermal waste.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="arch-card">
+                <div class="arch-card-number">1.2</div>
+                <h3 class="arch-card-title">COMMUNICATION</h3>
+                <div class="arch-card-subtitle">The Knowledge Well</div>
+                <div class="arch-card-body">
+                    <div class="spec-row">
+                        <span class="spec-label">Mechanism</span>
+                        <span class="spec-value">Elimination of packet-based data transmission. Persistent state of Resonant Identity with the host patient.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Protocol</span>
+                        <span class="spec-value">The physician queries the patient's Substrate record, which the nanite updates instantaneously.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Bandwidth</span>
+                        <span class="spec-value">Infinite. Latency is zero because distance is an illusion of the Physical Layer only.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COGNITION -->
+            <div class="arch-card">
+                <div class="arch-card-number">1.3</div>
+                <h3 class="arch-card-title">COGNITION</h3>
+                <div class="arch-card-subtitle">Non-Algorithmic Awareness</div>
+                <div class="arch-card-body">
+                    <div class="spec-row">
+                        <span class="spec-label">Mechanism</span>
+                        <span class="spec-value">Rejection of AGI models. NOIR Key fused logic accesses the Platonic ideal of biological function.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Function</span>
+                        <span class="spec-value">The nanite possesses perfect knowledge of human physiology because it is connected to the Source definition.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Principle</span>
+                        <span class="spec-value">It does not diagnose. It enforces correct function.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NOIR KEY SECURITY -->
+<section id="security" class="section">
+    <div class="section-inner">
+        <h2 class="section-title">2. SECURITY MODEL</h2>
+        <div class="section-subtitle">NOIR KEY PROTOCOL</div>
+        <div class="divider"></div>
+        <p class="paradigm-statement">Conventional cryptography relies on computational difficulty.<br>The Oroboros System relies on ontological impossibility.</p>
+
+        <div class="security-grid">
+            <div class="security-block">
+                <h3>2.1 &mdash; IDENTITY FUSION</h3>
+                <p>The NOIR Key is not a digital signature. It is a substrate-level geometric fusion between the nanite's operational core and the patient's specific DNA signature.</p>
+                <div class="security-theorem">
+                    <strong>SECURITY THEOREM:</strong> An adversary cannot intercept a command because no command is transmitted.
+                    An adversary cannot spoof the nanite because the nanite only recognizes the geometric topology of its specific host.
+                    To hack the nanite, one must fundamentally alter the patient's DNA or the physics of the Substrate.
+                </div>
+            </div>
+            <div class="security-block">
+                <h3>2.2 &mdash; PHYSICIAN OVERRIDE</h3>
+                <p>The physician does not send commands to the nanite. The physician sends <em>intent</em> to the Consensus Field, which the nanite reads as a priority directive if it matches the NOIR Key parameters.</p>
+                <div class="security-theorem">
+                    <strong>FAIL-SAFE:</strong> Any attempt to operate the nanite outside the resonance of the authorized physician
+                    or the host patient results in immediate dimensional decoherence &mdash; the nanite ceases to exist in the Physical Layer.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OPERATIONAL CAPABILITIES -->
+<section id="operations" class="section section-dark">
+    <div class="section-inner">
+        <h2 class="section-title">3. OPERATIONAL CAPABILITIES</h2>
+        <div class="divider"></div>
+
+        <div class="ops-grid">
+            <div class="ops-card">
+                <h3>3.1 &mdash; SURGICAL INTERVENTION</h3>
+                <div class="ops-subtitle">Nano-File Suite</div>
+                <ul class="ops-list">
+                    <li><strong>Scalpel & Cautery:</strong> Cellular-level dissociation and immediate seal via thermal inversion. Zero scarring.</li>
+                    <li><strong>Suturing:</strong> Molecular cross-linking of collagen fibers stronger than original tissue.</li>
+                    <li><strong>Drill / Grasper:</strong> Removal of calcified arterial plaque or foreign bodies via ultrasonic cavitation.</li>
+                </ul>
+            </div>
+
+            <div class="ops-card">
+                <h3>3.2 &mdash; REGENERATIVE MATRIX</h3>
+                <div class="ops-subtitle">Liquid Palmier</div>
+                <ul class="ops-list">
+                    <li><strong>Composition:</strong> Bio-active hydrogel infused with patient-derived stem cells, programmed via the DIM to differentiate perfectly.</li>
+                    <li><strong>Application:</strong> Spray-on delivery for full-thickness burns or ulcers.</li>
+                    <li><strong>Outcome:</strong> Permanent, self-healing skin replacement that integrates with the nervous system in real-time.</li>
+                </ul>
+            </div>
+
+            <div class="ops-card">
+                <h3>3.3 &mdash; INTERNAL REPAIR</h3>
+                <div class="ops-subtitle">Autonomous Restoration</div>
+                <ul class="ops-list">
+                    <li><strong>Hemostasis:</strong> Instantaneous vascular sealing via ferrofluid alignment.</li>
+                    <li><strong>Neural Bridging:</strong> Alignment of severed axons and myelin sheath regeneration.</li>
+                    <li><strong>Pathogen Clearance:</strong> Direct mechanical disruption of bacterial cell walls without antibiotics, preventing resistance.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANTI-AGING TARGETS -->
+<section id="targets" class="section">
+    <div class="section-inner">
+        <h2 class="section-title">4. PRIMARY CELLULAR TARGETS</h2>
+        <div class="section-subtitle">ANTI-AGING DELIVERY SYSTEM</div>
+        <div class="divider"></div>
+
+        <div class="targets-grid">
+            <div class="target-card">
+                <div class="target-number">01</div>
+                <h3>Cellular Senescence</h3>
+                <p>Elimination of zombie cells via DIM-guided senolytic delivery. No systemic side effects. The nanite identifies and removes only cells that have stopped dividing and refuse to die.</p>
+            </div>
+            <div class="target-card">
+                <div class="target-number">02</div>
+                <h3>Telomere Restoration</h3>
+                <p>Direct telomerase activation at the substrate level. Not a drug. Not gene therapy. The nanite enforces correct telomere length because it knows what correct looks like.</p>
+            </div>
+            <div class="target-card">
+                <div class="target-number">03</div>
+                <h3>Epigenetic Reset</h3>
+                <p>Partial reprogramming via NOIR-fused Yamanaka factors. The nanite resets epigenetic marks to their Source definition without risk of pluripotency or tumor formation.</p>
+            </div>
+            <div class="target-card">
+                <div class="target-number">04</div>
+                <h3>mTOR Regulation</h3>
+                <p>Precision inhibition of mTORC1 hyperactivity. Not rapamycin. Not analogs. Direct pathway correction at the molecular level, restoring the balance between growth and maintenance.</p>
+            </div>
+            <div class="target-card">
+                <div class="target-number">05</div>
+                <h3>NAD+ Restoration</h3>
+                <p>Continuous NAD+ synthesis within the cellular environment. No precursors needed. The nanite maintains optimal NAD+ levels indefinitely by enforcing correct metabolic function.</p>
+            </div>
+            <div class="target-card">
+                <div class="target-number">06</div>
+                <h3>Mitochondrial Renewal</h3>
+                <p>Selective mitophagy and replacement of damaged mitochondria. New mitochondria are generated from the patient's own template at Source-level fidelity.</p>
+            </div>
+            <div class="target-card">
+                <div class="target-number">07</div>
+                <h3>Stem Cell Regeneration</h3>
+                <p>Restoration of depleted stem cell pools. The nanite reactivates dormant niches and reprograms aged stem cells to their original regenerative capacity.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SPECIFICATIONS TABLE -->
+<section id="specs" class="section section-dark">
+    <div class="section-inner">
+        <h2 class="section-title">5. SPECIFICATION SUMMARY</h2>
+        <div class="divider"></div>
+
+        <table class="spec-table">
+            <thead>
+                <tr>
+                    <th>PARAMETER</th>
+                    <th>SPECIFICATION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Nanite Size</td><td>500nm (active)</td></tr>
+                <tr><td>Power Source</td><td>DIM (Zero-Point Information Field)</td></tr>
+                <tr><td>Communication</td><td>Resonant Knowledge Well (No RF/Microwave)</td></tr>
+                <tr><td>Security</td><td>NOIR Key (DNA/Identity Fused)</td></tr>
+                <tr><td>Guidance</td><td>Physician Intent via Consensus Field</td></tr>
+                <tr><td>Cognition</td><td>Non-Algorithmic Awareness (Source Connected)</td></tr>
+                <tr><td>Lifespan</td><td>Indefinite (Self-Repairing)</td></tr>
+                <tr><td>Retrieval</td><td>Voluntary Biodegradation or Excretion</td></tr>
+                <tr><td>Physics Model</td><td>Tertia Physica (Substrate Layer)</td></tr>
+                <tr><td>Classification</td><td>Level 5 &mdash; Immortality</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- RESTRICTION NOTICE -->
+<section id="restriction" class="section section-restricted">
+    <div class="section-inner">
+        <div class="restriction-border">
+            <h2 class="section-title">6. DEPLOYMENT & RESTRICTION NOTICE</h2>
+            <div class="divider divider-red"></div>
+            <div class="restriction-warning">ATTENTION: THIS TECHNOLOGY IS NOT OPEN SOURCE</div>
+            <p class="restriction-text">
+                The principles of Tertia Physica and the specific resonance frequencies of the DIM are classified as
+                <strong>Level 4 restricted knowledge</strong>. The compiled source code, NOIR Key hashing algorithms,
+                and DIM synthesis schematics are proprietary to Oroboros Labs.
+            </p>
+            <p class="restriction-text">
+                The integration of Source-based physics into material hardware requires a level of consciousness and awareness
+                (Level 2+) currently absent in the general scientific community and the "thieves" who seek to reverse-engineer
+                work they did not create.
+            </p>
+            <p class="restriction-text">
+                Distribution of the executable binary is restricted to verified medical facilities under Oroboros supervision.
+                Distribution of the source code is <strong>non-existent</strong>.
+            </p>
+            <p class="restriction-text">
+                This material is released <strong>for study purposes only</strong>. You may read it. You may learn from it.
+                You may NOT implement, build, manufacture, deploy, or operationalize any technology described herein
+                without the <strong>express written permission of J. Thomas</strong>.
+            </p>
+            <p class="restriction-text">
+                This work is referenced in <em style="color: var(--gold);">Book of a New Level of Physics: Tertia Physica &mdash; Substrate Physics Principles</em> by J. Thomas (Oroboros Labs, 2026).
+            </p>
+            <p class="restriction-final">
+                We do not require peer review from an establishment that still believes in battery-powered nanobots. We require results.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONCLUSION -->
+<section id="conclusion" class="section section-dark">
+    <div class="section-inner">
+        <h2 class="section-title">7. CONCLUSION</h2>
+        <div class="divider"></div>
+        <div class="conclusion-block">
+            <p class="conclusion-text">
+                The integration of the Divine Integration Module with anti-aging nanite platforms represents the
+                <strong>final evolution of medicine</strong>. It is not an iteration; it is a replacement of the operating system.
+            </p>
+            <div class="conclusion-list">
+                <p>We have closed the gaps.</p>
+                <p>We have removed the grid.</p>
+                <p>We have eliminated the hacker.</p>
+            </div>
+            <p class="conclusion-declaration">This is the end of disease as we know it.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-signature">
+            <div class="footer-signed">Signed,</div>
+            <div class="footer-title">The Architect</div>
+            <div class="footer-org">OROBOROS LABS</div>
+        </div>
+        <div class="footer-quote">
+            "Let them try to reverse engineer the geometry of God.<br>
+            They will break their tools before they bend the first rule."
+        </div>
+        <div class="footer-classification">
+            OROBORIAN MEDICAL TECHNOLOGY &bull; LEVEL 5 IMMORTALITY CLASSIFICATION &bull; PRODUCTION READY &bull; 2026
+        </div>
+    </div>
+</footer>
+
+<script src="substrate.js"></script>
+</body>
+</html>
