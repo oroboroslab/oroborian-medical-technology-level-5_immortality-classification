@@ -13,7 +13,7 @@
     let connections = [];
     const PARTICLE_COUNT = 80;
     const CONNECTION_DISTANCE = 180;
-    const GOLD = { r: 184, g: 184, b: 184 };
+    const GOLD = { r: 201, g: 168, b: 76 };
 
     function resize() {
         width = canvas.width = window.innerWidth;
