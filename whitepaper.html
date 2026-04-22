@@ -8,13 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --text: #1a1a1a;
-            --text-light: #555;
-            --border: #ddd;
-            --accent: #8B7230;
-            --bg: #ffffff;
-            --bg-alt: #f8f7f5;
-            --red: #8B2020;
+            /* Black-on-black with obsidian accents */
+            --text: #E8E6E1;
+            --text-light: #8A8886;
+            --border: #2A2A2A;
+            --accent: #B8B8B8;
+            --accent-dim: #5A5A5A;
+            --bg: #000000;
+            --bg-alt: #0A0A0A;
+            --bg-elevated: #111111;
+            --red: #6B1818;
+            --red-glow: #A02828;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,8 +34,9 @@
         }
 
         .protection-bar {
-            background: var(--text);
-            color: #fff;
+            background: var(--bg-elevated);
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
             text-align: center;
             padding: 10px 20px;
             font-family: 'Source Code Pro', monospace;
@@ -218,8 +223,9 @@
         .principles-list li strong { color: var(--accent); }
 
         .version-banner {
-            background: var(--text);
-            color: #fff;
+            background: var(--bg-elevated);
+            color: var(--accent);
+            border: 1px solid var(--border);
             text-align: center;
             padding: 20px;
             margin: 60px 0 40px;
@@ -281,14 +287,14 @@
         }
 
         .license-box {
-            border: 2px solid var(--red);
+            border: 1px solid var(--red);
             margin: 30px 0;
-            background: #fdf8f8;
+            background: rgba(107, 24, 24, 0.05);
         }
 
         .license-header {
             background: var(--red);
-            color: #fff;
+            color: #E8E6E1;
             padding: 10px 28px;
             font-family: 'Source Code Pro', monospace;
             font-size: 12px;
@@ -329,9 +335,31 @@
         .footer-org { font-family: 'Source Code Pro', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-light); margin-bottom: 20px; }
         .footer-class { font-family: 'Source Code Pro', monospace; font-size: 10px; letter-spacing: 2px; color: var(--text-light); text-transform: uppercase; }
 
-        .nav-back { max-width: 780px; margin: 0 auto; padding: 16px 30px; }
+        .nav-back { max-width: 780px; margin: 0 auto; padding: 16px 30px; display: flex; justify-content: space-between; align-items: center; }
         .nav-back a { font-family: 'Source Code Pro', monospace; font-size: 12px; letter-spacing: 1px; color: var(--accent); text-decoration: none; }
         .nav-back a:hover { text-decoration: underline; }
+
+        .wp-brand-strip {
+            max-width: 780px; margin: 0 auto;
+            padding: 10px 30px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+        .wp-brand-strip .brand-left, .wp-brand-strip .brand-right {
+            display: flex; align-items: center; gap: 10px; text-decoration: none;
+        }
+        .wp-brand-strip img { height: 28px; width: 28px; object-fit: contain; }
+        .wp-brand-strip img.noir { height: 24px; width: 24px; }
+        .wp-brand-strip .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+        .wp-brand-strip .brand-name {
+            font-family: 'Source Code Pro', monospace; font-size: 11px; letter-spacing: 3px;
+            color: var(--accent); text-transform: uppercase; font-weight: 700;
+        }
+        .wp-brand-strip .brand-sub {
+            font-family: 'Source Code Pro', monospace; font-size: 9px; letter-spacing: 2px;
+            color: var(--text-light); text-transform: uppercase;
+        }
+        .wp-brand-strip .brand-right .brand-text { text-align: right; }
 
         @media print {
             .protection-bar, .nav-back { display: none; }
@@ -361,6 +389,23 @@
     Architect's License v1.0 &mdash; Study Only &mdash; No Implementation Without Express Permission of J. Thomas
 </div>
 
+<div class="wp-brand-strip">
+    <a class="brand-left" href="https://oroboroslab.github.io/" aria-label="Oroboros Labs">
+        <img src="assets/oroboros-logo.png" alt="Oroboros Labs"/>
+        <div class="brand-text">
+            <span class="brand-name">OROBOROS LABS</span>
+            <span class="brand-sub">Medical Technology Division</span>
+        </div>
+    </a>
+    <a class="brand-right" href="#" aria-label="NOIR Security">
+        <div class="brand-text">
+            <span class="brand-name">NOIR</span>
+            <span class="brand-sub">Security Protocol</span>
+        </div>
+        <img class="noir" src="assets/noir-shield-logo.svg" alt="NOIR Shield"/>
+    </a>
+</div>
+
 <div class="nav-back">
     <a href="index.html">&larr; Return to Specification</a>
 </div>
@@ -370,22 +415,22 @@
         <svg viewBox="0 0 300 300" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#8B7230"/>
-                    <stop offset="50%" stop-color="#C9A84C"/>
-                    <stop offset="100%" stop-color="#8B7230"/>
+                    <stop offset="0%" stop-color="#B8B8B8"/>
+                    <stop offset="50%" stop-color="#E0E0E0"/>
+                    <stop offset="100%" stop-color="#B8B8B8"/>
                 </linearGradient>
             </defs>
-            <circle cx="150" cy="150" r="130" fill="none" stroke="#8B7230" stroke-width="1" stroke-dasharray="4 8"/>
+            <circle cx="150" cy="150" r="130" fill="none" stroke="#B8B8B8" stroke-width="1" stroke-dasharray="4 8"/>
             <path d="M 150 30 A 120 120 0 1 1 80 55" fill="none" stroke="url(#g1)" stroke-width="5" stroke-linecap="round"/>
-            <path d="M 80 55 L 65 42 L 72 60 L 80 55 Z" fill="#8B7230"/>
-            <circle cx="73" cy="50" r="2" fill="#fff"/>
-            <circle cx="150" cy="30" r="1.5" fill="#8B7230" opacity="0.6"/>
-            <circle cx="270" cy="150" r="1.5" fill="#8B7230" opacity="0.6"/>
-            <circle cx="150" cy="270" r="1.5" fill="#8B7230" opacity="0.6"/>
-            <circle cx="38" cy="120" r="1.5" fill="#8B7230" opacity="0.6"/>
-            <circle cx="150" cy="150" r="85" fill="none" stroke="#8B7230" stroke-width="0.5" stroke-dasharray="2 6"/>
-            <text x="150" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#1a1a1a" letter-spacing="3">OROBOROS</text>
-            <text x="150" y="165" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B7230" letter-spacing="4">MEDICAL TECHNOLOGY</text>
+            <path d="M 80 55 L 65 42 L 72 60 L 80 55 Z" fill="#B8B8B8"/>
+            <circle cx="73" cy="50" r="2" fill="#000"/>
+            <circle cx="150" cy="30" r="1.5" fill="#B8B8B8" opacity="0.6"/>
+            <circle cx="270" cy="150" r="1.5" fill="#B8B8B8" opacity="0.6"/>
+            <circle cx="150" cy="270" r="1.5" fill="#B8B8B8" opacity="0.6"/>
+            <circle cx="38" cy="120" r="1.5" fill="#B8B8B8" opacity="0.6"/>
+            <circle cx="150" cy="150" r="85" fill="none" stroke="#B8B8B8" stroke-width="0.5" stroke-dasharray="2 6"/>
+            <text x="150" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#E8E6E1" letter-spacing="3">OROBOROS</text>
+            <text x="150" y="165" text-anchor="middle" font-family="monospace" font-size="9" fill="#B8B8B8" letter-spacing="4">MEDICAL TECHNOLOGY</text>
         </svg>
     </div>
     <div class="paper-org">Oroboros Labs</div>
